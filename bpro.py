@@ -59,3 +59,21 @@ def bbb():
     print("x = "+str(x))
     print("y = "+str(y))
     print("z = "+str(z))
+def is_prime(a):
+    par = 0
+    ter = 2
+    while(True):
+        if(ter*ter>=a):
+            break
+        if(a%ter == 0):
+            par = 1
+            break
+        ter += 1
+    if(par == 0):
+        return 1;
+    else:
+        return 0
+def prime(b):
+    for i in range(b):
+        if(is_prime(i) == 1):
+            print(str(i)+"\n")
